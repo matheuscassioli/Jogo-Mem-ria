@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgba(0, 81, 255, 0.876);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+p{
+    margin: 0;
+    
+}
+    .container {
+
+        background-color: #55addf;
+        width: 70vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+
+        div {
+            background-color: yellow;
+            height: 150px;
+            width: 150px;
+            margin: 15px;
+        }
+
+        .leao {
+            background-image: url(../img/lion.jpg);
+        }
+
+        .coala {
+            background-image: url(../img/coala.jpg);
+            background-position: center;
+        }
+
+        .girafa {
+            background-image: url(../img/girafa.jpg);
+            background-position: center;
+        }
+
+        .cachorro {
+            background-image: url(../img/cachorro.jpg);
+            background-position: center;
+        }
+
+        .gato {
+            background-image: url(../img/gato.jpg);
+
+        }
+
+        .zebra {
+            background-image: url(../img/zebra.jpg);
+            background-position: center;
+        }
+    }
+}
