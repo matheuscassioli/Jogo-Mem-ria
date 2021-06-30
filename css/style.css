@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
@@ -9,47 +10,63 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
-body p {
-  margin: 0;
+body .titulo {
+  display: flex;
+  background-color: #55addf;
+  height: 80px;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  color: black;
+  font: bold;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 body .container {
+  position: absolute;
   background-color: #55addf;
   width: 70vw;
   height: 50vh;
-  display: flex;
   flex-direction: row;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 200px;
 }
-body .container div {
-  background-color: yellow;
+body .leao,
+body .cachorro,
+body .coala,
+body .gato,
+body .girafa,
+body .zebra {
+  background-image: url(../img/CassiCheap.png);
   height: 150px;
   width: 150px;
   margin: 15px;
 }
-body .container .leao {
+body .leao {
   background-image: url(../img/lion.jpg);
 }
-body .container .coala {
+body .coala:hover {
   background-image: url(../img/coala.jpg);
   background-position: center;
 }
-body .container .girafa {
+body .girafa:hover {
   background-image: url(../img/girafa.jpg);
   background-position: center;
 }
-body .container .cachorro {
+body .cachorro:hover {
   background-image: url(../img/cachorro.jpg);
   background-position: center;
 }
-body .container .gato {
+body .gato:hover {
   background-image: url(../img/gato.jpg);
 }
-body .container .zebra {
+body .zebra:hover {
   background-image: url(../img/zebra.jpg);
   background-position: center;
 }

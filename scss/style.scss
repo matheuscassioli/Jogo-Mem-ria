@@ -1,67 +1,88 @@
+$corPrimaria:rgba(0, 81, 255, 0.876);
+$corSecundaria:#55addf;
+$corTextoPrincipal: black;
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: sans-serif;
 }
 
 body {
-    background-color: rgba(0, 81, 255, 0.876);
+    background-color: $corPrimaria;
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-p{
-    margin: 0;
-    
-}
-    .container {
+    justify-content:center ;
 
-        background-color: #55addf;
+
+    .titulo {
+        
+        display: flex;
+        background-color: $corSecundaria;
+        height: 80px;
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+        color:$corTextoPrincipal ;
+        font: bold;
+        font-size: 20px;
+        text-transform:uppercase;
+        
+    }
+
+    .container {
+        position: absolute;
+        background-color: $corSecundaria;
         width: 70vw;
         height: 50vh;
-        display: flex;
         flex-direction: row;
+        display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        margin-top: 200px;
+    }
 
+    .leao,
+    .cachorro,
+    .coala,
+    .gato,
+    .girafa,
+    .zebra {
+        background-image: url(../img/CassiCheap.png);
+        height: 150px;
+        width: 150px;
+        margin: 15px;
+    }
 
-        div {
-            background-color: yellow;
-            height: 150px;
-            width: 150px;
-            margin: 15px;
-        }
+    .leao:hover{
+        background-image: url(../img/lion.jpg);
+    }
 
-        .leao {
-            background-image: url(../img/lion.jpg);
-        }
+    .coala:hover {
+        background-image: url(../img/coala.jpg);
+        background-position: center;
+    }
 
-        .coala {
-            background-image: url(../img/coala.jpg);
-            background-position: center;
-        }
+    .girafa:hover {
+        background-image: url(../img/girafa.jpg);
+        background-position: center;
+    }
 
-        .girafa {
-            background-image: url(../img/girafa.jpg);
-            background-position: center;
-        }
+    .cachorro:hover {
+        background-image: url(../img/cachorro.jpg);
+        background-position: center;
+    }
 
-        .cachorro {
-            background-image: url(../img/cachorro.jpg);
-            background-position: center;
-        }
+    .gato:hover {
+        background-image: url(../img/gato.jpg);
 
-        .gato {
-            background-image: url(../img/gato.jpg);
+    }
 
-        }
-
-        .zebra {
-            background-image: url(../img/zebra.jpg);
-            background-position: center;
-        }
+    .zebra:hover {
+        background-image: url(../img/zebra.jpg);
+        background-position: center;
     }
 }
