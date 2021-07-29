@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 81, 255, 0.876);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body p {
+  margin: 0;
+}
+body .container {
+  background-color: #55addf;
+  width: 70vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+body .container div {
+  background-color: yellow;
+  height: 150px;
+  width: 150px;
+  margin: 15px;
+}
+body .container .leao {
+  background-image: url(../img/lion.jpg);
+}
+body .container .coala {
+  background-image: url(../img/coala.jpg);
+  background-position: center;
+}
+body .container .girafa {
+  background-image: url(../img/girafa.jpg);
+  background-position: center;
+}
+body .container .cachorro {
+  background-image: url(../img/cachorro.jpg);
+  background-position: center;
+}
+body .container .gato {
+  background-image: url(../img/gato.jpg);
+}
+body .container .zebra {
+  background-image: url(../img/zebra.jpg);
+  background-position: center;
+}

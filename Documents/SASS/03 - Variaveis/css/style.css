@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+}
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  height: 100px;
+}
+body header h1 {
+  margin: 0;
+}

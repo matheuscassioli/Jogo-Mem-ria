@@ -1,0 +1,22 @@
+$roxo-matheus : purple;
+$azul_royal : blue;
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: $azul_royal;
+    width: 100vw;
+    height: 100vh;
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $roxo-matheus;
+        height: 100px;
+
+        h1 {
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@use "cantos" as c;
+
+$color:green;
+$colorPrimaria: #00af9c;
+$colorWhite: #fff;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: $color;
+
+}
+
+#chat {
+
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: flex;
+        margin-bottom: 32px;
+
+        .avatar {
+            padding: 0 16px;
+            display: flex;
+            align-items: flex-end;
+
+            img {
+                @include c.circulo;
+                width: 48px;
+            }
+        }
+
+        .message {
+            flex: 1;
+            background-color: $colorPrimaria;
+            padding: 16px;
+            @include c.arredondado;
+            border-bottom-left-radius: 0;
+            border: solid 2px $color;
+            color: $colorWhite;
+
+            p {
+                font-size: 14px;
+            }
+
+            time {
+                font-size: 12px;
+                letter-spacing: 1px;
+                opacity: .65;
+
+            }
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+
+            button {
+                border: 2px;
+                background: none;
+                outline: none;
+
+                img {
+                    width: 16px;
+                    opacity: .5;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &.me {
+            flex-direction: row-reverse;
+            color: $colorPrimaria;
+
+            .message {
+                border-bottom-right-radius: 8px;
+                border-bottom-right-radius: 0;
+
+                ::selection {
+                    background: #fff;
+                    color: $colorPrimaria;
+                }
+            }
+
+            strong {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: green;
+}
+
+#chat {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 0;
+  list-style: none;
+}
+#chat li {
+  display: flex;
+  margin-bottom: 32px;
+}
+#chat li .avatar {
+  padding: 0 16px;
+  display: flex;
+  align-items: flex-end;
+}
+#chat li .avatar img {
+  border-radius: 50%;
+  width: 48px;
+}
+#chat li .message {
+  flex: 1;
+  background-color: #00af9c;
+  padding: 16px;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border: solid 2px green;
+  color: #fff;
+}
+#chat li .message p {
+  font-size: 14px;
+}
+#chat li .message time {
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.65;
+}
+#chat li .menu {
+  display: flex;
+  align-items: center;
+}
+#chat li .menu button {
+  border: 2px;
+  background: none;
+  outline: none;
+}
+#chat li .menu button img {
+  width: 16px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+#chat li.me {
+  flex-direction: row-reverse;
+  color: #00af9c;
+}
+#chat li.me .message {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 0;
+}
+#chat li.me .message ::selection {
+  background: #fff;
+  color: #00af9c;
+}
+#chat li.me strong {
+  display: none;
+}

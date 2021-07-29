@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+a:hover {
+  color: RED;
+}
+
+.button {
+  background-color: RED;
+  color: #999;
+  padding: 8px 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+#logo {
+  color: RED;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 16px;
+}
+header nav {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main {
+  margin: 15vw;
+  padding-right: 320px;
+  background-image: url("https://picsum.photos/480");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  min-height: 400px;
+}
+main h1 {
+  font-weight: bold;
+  font-size: 48px;
+}
+main h1 span {
+  color: RED;
+}
+main h1 small {
+  display: block;
+  font-weight: 100;
+  font-size: 24px;
+}
+main h1 p {
+  margin-bottom: 60px;
+}
+main h1 .button {
+  padding: 16px 64px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  font-size: 12px;
+  color: #999;
+}
